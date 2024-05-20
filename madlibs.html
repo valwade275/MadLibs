@@ -1,43 +1,55 @@
-h1 class="main-title">Valerie's Mad Libs!</h1>
-<main>
-  <div class="selections-container">
-    <label class="dropdown-text" for="people-dropdown">Choose a name:</label>
-    <select class="dropdown" name="people" id="people-dropdown">
-      <option value="">--Please choose an option--</option>
-      <option value="Jessica">Jessica</option>
-      <option value="Calvin">Calvin</option>
-      <option value="Anaya">Anaya</option>
-      <option value="Marcus">Marcus</option>
-      <option value="Adrienne">Adrienne</option>
-    </select>
-    <label class="dropdown-text" for="verbs-dropdown">Choose a verb:</label>
-    <select class="dropdown" name="verbs" id="verbs-dropdown">
-      <option value="">--Please choose an option--</option>
-      <option value="playing">playing</option>
-      <option value="listening">listening</option>
-      <option value="walking">walking</option>
-      <option value="running">running</option>
-      <option value="laughing">laughing</option>
-    </select>
-    <label class="dropdown-text" for="location-dropdown">Choose a location:</label>
-    <select class="dropdown" name="location" id="location-dropdown">
-      <option value="">--Please choose an option--</option>
-      <option value="Nairobi">Nairobi</option>
-      <option value="Rome">Rome</option>
-      <option value="Athens">Athens</option>
-      <option value="Cairo">Cairo</option>
-      <option value="Tokyo">Tokyo</option>
-    </select>
-    <label class="dropdown-text" for="food-dropdown">Choose a food item:</label>
-    <select class="dropdown" name="food" id="food-dropdown">
-      <option value="">--Please choose an option--</option>
-      <option value="dumplings">Dumplings</option>
-      <option value="garlic">Garlic</option>
-      <option value="beignets">beignets</option>
-      <option value="falafels">Falafels</option>
-      <option value="zucchini">Zucchini</option>
-    </select>
-  </div>
-  <button class="btn" id="generate-madlib-btn">Generate Mad Lib</button>
-  <p id="madlib-text"></p>
-</main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valerie's Mad Libs</title>
+  <link rel="stylesheet" href="madlibsstyle.css"> 
+</head>
+<body>
+  <h1 class="main-title">Valerie's Mad Libs!</h1>
+  <main>
+    <div class="selections-container">
+      <label class="dropdown-text" for="people-dropdown">Choose a name:</label>
+      <select class="dropdown" name="people" id="people-dropdown">
+        <option value="">--Please choose an option--</option>
+        <option value="Jessica">Jessica</option>
+        <option value="Calvin">Calvin</option>
+        <option value="Anaya">Anaya</option>
+        <option value="Marcus">Marcus</option>
+        <option value="Adrienne">Adrienne</option>
+      </select>
+      <label class="dropdown-text" for="verbs-dropdown">Choose a verb:</label>
+      <select class="dropdown" name="verbs" id="verbs-dropdown">
+        <option value="">--Please choose an option--</option>
+        <option value="playing">playing</option>
+        <option value="listening">listening</option>
+        <option value="walking">walking</option>
+        <option value="running">running</option>
+        <option value="laughing">laughing</option>
+      </select>
+      <label class="dropdown-text" for="location-dropdown">Choose a location:</label>
+      <select class="dropdown" name="location" id="location-dropdown">
+        <option value="">--Please choose an option--</option>
+        <option value="Nairobi">Nairobi</option>
+        <option value="Rome">Rome</option>
+        <option value="Athens">Athens</option>
+        <option value="Cairo">Cairo</option>
+        <option value="Tokyo">Tokyo</option>
+      </select>
+      <label class="dropdown-text" for="food-dropdown">Choose a food item:</label>
+      <select class="dropdown" name="food" id="food-dropdown">
+        <option value="">--Please choose an option--</option>
+        <option value="dumplings">Dumplings</option>
+        <option value="garlic">Garlic</option>
+        <option value="beignets">beignets</option>
+        <option value="falafels">Falafels</option>
+        <option value="zucchini">Zucchini</option>
+      </select>
+    </div>
+    <button class="btn" id="generate-madlib-btn">Generate Mad Lib</button>
+    <p id="madlib-text"></p>
+  </main>
+  <script src="madlibsapp.js"></script> 
+</body>
+</html>
