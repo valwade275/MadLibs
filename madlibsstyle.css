@@ -20,6 +20,9 @@
 
 body {
   background-color: var(--dark-purple);
+  font-family: Arial, sans-serif; /* Added a default font-family for consistency */
+  margin: 0; /* Ensure no default margin on body */
+  padding: 0; /* Ensure no default padding on body */
 }
 
 .main-title {
@@ -45,6 +48,7 @@ body {
 
 .dropdown-text {
   text-align: center;
+  color: var(--dark-purple); /* Added color for better readability */
 }
 
 .btn {
@@ -54,10 +58,10 @@ body {
   color: var(--black);
   background-color: var(--gold);
   background-image: linear-gradient(var(--golden-yellow), var(--orange));
-  border-color: var(--gold);
-  border-width: 3px;
+  border: 3px solid var(--gold); /* Corrected border property syntax */
   font-size: 1.2rem;
   margin: 25px auto;
+  text-align: center; /* Ensure button text is centered */
 }
 
 .btn:hover {
@@ -68,4 +72,5 @@ body {
   color: var(--off-white);
   font-size: 1.3rem;
   text-align: center;
+  margin-top: 20px; /* Added margin-top for better spacing */
 }
