@@ -5,10 +5,10 @@ const foodDropdown = document.getElementById("food-dropdown");
 const madLibTextResult = document.getElementById("madlib-text");
 const generateMadLibBtn = document.getElementById("generate-madlib-btn");
 
-let person;
-let verb;
-let site;
-let food;
+let person = "";
+let verb = "";
+let site = "";
+let food = "";
 
 peopleDropdown.addEventListener("change", (e) => (person = e.target.value));
 verbsDropdown.addEventListener("change", (e) => (verb = e.target.value));
@@ -20,10 +20,10 @@ const resetValues = () => {
   verbsDropdown.selectedIndex = 0;
   locationDropdown.selectedIndex = 0;
   foodDropdown.selectedIndex = 0;
-  person = undefined;
-  verb = undefined;
-  site = undefined;
-  food = undefined;
+  person = "";
+  verb = "";
+  site = "";
+  food = "";
 };
 
 generateMadLibBtn.addEventListener("click", () => {
@@ -35,11 +35,7 @@ generateMadLibBtn.addEventListener("click", () => {
 
   const randomIndex = Math.floor(Math.random() * madLibsArr.length);
 
-  if (
-    [person, verb, site, food].some(
-      (userSelection) => userSelection === undefined
-    )
-  ) {
+  if ([person, verb, site, food].some((userSelection) => userSelection === "")) {
     alert("Please choose a selection from each of the dropdowns");
     return;
   }
