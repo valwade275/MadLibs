@@ -1,5 +1,10 @@
 # Documentation for Valerie's MadLibs
-Valerie's MadLibs is a word game that is great for passing time between Pomodoros.
+Valerie's Mad Libs is a word game that is great for passing time between Pomodoros.
+
+## How to Play
+To play my version of Mad Libs, choose an option from each dropdown menu. Once you have done so, click the *Generate Mad Lib* button. The result will display directly below the button. 
+
+To create another Mad Lib, choose new options from the menus and click the button again. Play multiple times to see how many sentence combinations you can create. 
 
 ## HTML Elements
 
